@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnEx || Learners Dashboard</title>
+    <link rel="stylesheet" href=".\css\learners.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <div class="navbar-content">
+          <!-- Logo -->
+          <div class="navbar-left">
+            <a href="#" class="title-logo">
+              <div class="oicon"></div>
+            </a>
+            <p class="title">LearnEx</p>
+
+            <!-- Explore Dropdown -->
+            <div class="dropdown">
+              <button class="explore-btn dropdown-toggle">
+                Explore
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="chevron-down"
+                >
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </button>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Marketplace</a>
+               
+                <a href="#" class="dropdown-item"> Certificates</a>
+                <a href="#" class="dropdown-item"> Badges</a>
+                
+              </div>
+            </div>
+          </div>
+
+          <!-- Search Bar -->
+          <div class="search-container">
+            <form id="search-form">
+              <div class="search-wrapper">
+                <input
+                  type="text"
+                  placeholder="What do you want to learn?"
+                  class="search-input"
+                />
+                <button type="submit" class="search-btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="search-icon"
+                  >
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="m21 21-4.3-4.3" />
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Right Navigation -->
+          <div class="navbar-right">
+            <a href="#" class="nav-link degrees-link">Degrees</a>
+            <a href="#" class="nav-link careers-link">Careers</a>
+
+            <!-- Language Selector -->
+            <div class="dropdown">
+              <button class="lang-btn dropdown-toggle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="globe-icon"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path
+                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                  />
+                  <path d="M2 12h20" />
+                </svg>
+                <span class="lang-text">English</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="chevron-down"
+                >
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </button>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a href="#" class="dropdown-item">English</a>
+                <a href="#" class="dropdown-item">Español</a>
+                <a href="#" class="dropdown-item">Français</a>
+                <a href="#" class="dropdown-item">Deutsch</a>
+                <a href="#" class="dropdown-item">中文</a>
+                <a href="#" class="dropdown-item">日本語</a>
+              </div>
+            </div>
+
+            <!-- Notifications -->
+            <button class="notification-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="bell-icon"
+              >
+                <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" />
+                <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
+              </svg>
+              <span class="notification-badge"></span>
+            </button>
+
+            <!-- User Profile -->
+            <div class="dropdown">
+              <button class="avatar-btn dropdown-toggle">
+                <div class="avatar">B</div>
+              </button>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a href="#" class="dropdown-item">My Profile</a>
+                <a href="#" class="dropdown-item">My Courses</a>
+                <a href="#" class="dropdown-item">Settings</a>
+                <a href="#" class="dropdown-item">Help Center</a>
+                <a href="#" class="dropdown-item">Log Out</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="container">
+        <div class="wlcm-msg">
+          <h1 class="wlcm-heading">Welcome to LearnEx</h1>
+          <p class="wlcm-text">
+            Find the best courses and specializations from top universities and
+            industry leaders.
+          </p>
+          <div class="enroll-course">
+            <!-- From Uiverse.io by milegelu -->
+            
+          </div>
+        </div>
+        <div class="inner-container">
+          <div class="card">
+            <div class="logo">
+              <img src="https://www.interviewbit.com/blog/wp-content/uploads/2023/05/Artboard-1-copy-2.jpg">
+            </div>
+            
+            <div class="card-content">
+              <h3>Python for Everybody</h3>
+              <p>Beginner · Course</p>
+              <a href="#">St. Xavier's College</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="logo">
+              <img src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fdykc6vh9ttpisnhj4pju.png">
+            </div>
+            <div class="card-content">
+              <h3>Modern React with Redux</h3>
+              <p>Beginner · Specialization</p>
+              <a href="#">University of Michigan</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="logo">
+              <img src="https://www.images.cybrosys.com/css/assets/populor/courses-7.jpg">
+            </div>
+            <div class="card-content">
+              <h3>UI/UX Design Specialization</h3>
+              <p>Intermediate · Specialization</p>
+              <a href="#">Vanderbilt University</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="logo">
+              <img src="https://blogs.iadb.org/caribbean-dev-trends/wp-content/uploads/sites/34/2017/12/Blockchain1.jpg">
+            </div>
+            <div class="card-content">
+              <h3>Blockchain Specialization</h3>
+              <p>Beginner · Specialization</p>
+              <a href="#">University of Michigan</a>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="logo">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYgCDqdY6ElR_jjAla7PGLbN4NyhpUSVZ30Q&s">
+            </div>
+            <div class="card-content">
+              <h3>Complete iOS App Development</h3>
+              <p>Beginner · Course</p>
+              <a href="#">Google</a>
+            </div>
+          </div>
+          <div id  = "more-div" class="card">
+            <a>See More</a>
+          </div>
+        </div>
+      </div>
+      <!-- FAQ Section -->
+      <section class="faq-section">
+        <div class="container">
+          <h2 class="faq-heading">Frequently Asked Questions</h2>
+
+          <div class="faq-container">
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>What is LearnEx?</h3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="faq-icon"
+                >
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  LearnEx is an educational platform that enables users to learn
+                  various courses online, possibly in different subjects or
+                  fields. It is an eco-friendly design to make learning
+                  accessible and engaging.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>Are there any prerequisites for courses?</h3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="faq-icon"
+                >
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Prerequisites vary by course. Each course page clearly lists
+                  any required background knowledge or skills. Many of our
+                  beginner courses have no prerequisites and are designed for
+                  learners who are new to the subject.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>How do I get a certificate after completing a course?</h3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="faq-icon"
+                >
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  After successfully completing all required assignments and
+                  assessments, you'll be eligible to receive your certificate.
+                  Go to the "My Courses" section in your profile, find the
+                  completed course, and click on "Get Certificate" to download
+                  or share your achievement.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>
+                  What's the difference between a course and a specialization?
+                </h3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="faq-icon"
+                >
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  A course is a single learning program focused on a specific
+                  topic. A specialization is a series of related courses
+                  designed to help you master a particular skill or field.
+                  Specializations typically include a hands-on project to apply
+                  your new skills.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>
+                  Can I access course materials after completing a course?
+                </h3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="faq-icon"
+                >
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Yes, once you've enrolled in a course, you'll have continued
+                  access to the course materials even after completion. This
+                  allows you to revisit content and refresh your knowledge
+                  whenever needed.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 YourCompanyName. All Rights Reserved.</p>
+    </footer>
+  </body>
+  <script src="js/learners.js"></script>
+</html>
